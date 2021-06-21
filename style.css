@@ -1,0 +1,522 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  /* overflow-x: hidden; */
+}
+body {
+  overflow-x: hidden;
+}
+.navbar {
+  background-color: #222222;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  /* padding: 0px 60px; */
+  padding-left: 60px;
+  padding-right: 60px;
+  z-index: 3;
+}
+
+.navbar-brand {
+  font-size: 40px;
+  letter-spacing: 6px;
+  font-family: "Bebas Neue", cursive;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #e8290b;
+}
+
+#icon {
+  color: red;
+  display: none;
+}
+
+.navbar-links {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 875px) {
+  .navbar-links {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 816px) {
+  .navbar-links {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  a {
+    color: red;
+  }
+}
+
+@media (max-width: 601px) {
+  .navbar-links {
+    display: none;
+  }
+
+  #icon {
+    display: block;
+  }
+}
+
+#entry {
+  height: 80vh;
+  background-color: #222222;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 150px;
+}
+.entry-text {
+  margin-top: 80px;
+  font-size: 40px;
+  letter-spacing: 3px;
+  font-family: "Bebas Neue", cursive;
+}
+
+.entry-description {
+  margin-top: 30px;
+  line-height: 20px;
+}
+
+.get-in-touch {
+  margin-top: 30px;
+  font-size: 20px;
+  background-color: #e8290b;
+  outline: 1px solid #222222;
+  outline-offset: -5px;
+  letter-spacing: 2px;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.get-in-touch:hover {
+  color: #000;
+  background-color: #fff;
+  transition: all 1.5s linear;
+}
+
+@media (max-width: 970px) {
+  .entry-text {
+    margin-top: 70px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-family: "Bebas Neue", cursive;
+  }
+  .entry-description {
+    margin-top: 20px;
+    line-height: 15px;
+  }
+
+  .get-in-touch {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 725px) {
+  #entry {
+    padding: 140px;
+  }
+  .entry-text {
+    margin-top: 50px;
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+  .entry-description {
+    margin-top: 13px;
+    line-height: 15px;
+  }
+
+  .get-in-touch {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 550px) {
+  #entry {
+    padding: 120px;
+  }
+  .get-in-touch {
+    font-size: 16px;
+  }
+}
+
+#about {
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 60px 120px;
+  justify-content: center;
+}
+
+.question {
+  font-size: 30px;
+}
+
+.answer {
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 30px;
+}
+
+#blog {
+  background-color: #222;
+  color: #fff;
+
+  padding: 60px 120px;
+}
+.blog-header,
+.testimonial-header {
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+}
+.blog-list {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog-list .img-1 {
+  width: 40%;
+}
+
+.blog-list .img-1 img {
+  width: 100%;
+}
+
+.blog-list .blog {
+  width: 50%;
+}
+
+.blog-list .blog .blog-info {
+  margin-top: 13px;
+}
+
+.blog-list-reverse {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+.blog-list-reverse .img-1 {
+  width: 40%;
+}
+
+.blog-list-reverse .img-1 img {
+  width: 100%;
+}
+
+.blog-list-reverse .blog {
+  width: 50%;
+}
+
+.blog-list-reverse .blog .blog-info {
+  margin-top: 13px;
+}
+
+#projects {
+  padding: 60px;
+  text-align: center;
+}
+
+.project-header {
+  text-align: center;
+  color: black;
+  padding: 50px;
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.project-list {
+  display: flex;
+  justify-content: space-between;
+}
+.project img {
+  width: 80%;
+}
+.project-list .project {
+  width: 23%;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+
+.project .project-info {
+  margin-top: 60px;
+}
+
+.project .project-description {
+  font-size: 16px;
+}
+
+.project-btn {
+  margin-top: 100px;
+}
+
+.project-btn button,
+.formBtn {
+  font-size: 20px;
+  padding: 10px;
+  background-color: #e8290b;
+  color: white;
+  outline: none;
+  outline-offset: -5px;
+}
+
+#testimonial {
+  padding: 120px;
+  text-align: center;
+}
+
+.testimonial-card {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0px 20px 40px #0000000d;
+  border-radius: 3px;
+  padding: 60px 120px;
+}
+
+.testimonial-card img {
+  width: 200px;
+  display: block;
+  border-radius: 50%;
+  display: flex;
+}
+
+.testimonial-description {
+  margin: auto;
+  margin-top: 40px;
+  width: 40%;
+  text-align: start;
+  background-color: white;
+}
+
+.testimonial-name {
+  font-size: 30px;
+  margin-top: 20px;
+  font-family: "Bebas Neue", cursive;
+  padding: 30px;
+}
+
+#contact {
+  background-color: #222;
+  margin-top: -300px;
+  padding: 250px 120px 60px 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  width: 50%;
+  margin: auto;
+}
+
+label {
+  color: #fff;
+  display: block;
+  margin-top: 15px;
+}
+input,
+textarea {
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 18px;
+}
+footer {
+  text-align: center;
+}
+.heart {
+  font-size: 18px;
+  color: #e8290b;
+}
+
+@media (max-width: 542px) {
+  #entry {
+    text-align: start;
+    padding: 90px 30px;
+  }
+
+  .entry-text {
+    margin-top: 70px;
+    font-size: 16px;
+    letter-spacing: 0px;
+    text-align: start;
+  }
+  .get-in-touch,
+  .project-btn button,
+  .formBtn {
+    font-size: 16px;
+    letter-spacing: 1px;
+    border: none;
+    padding: 8px;
+  }
+
+  #about {
+    height: 60vh;
+    text-align: start;
+    padding: 30px 30px;
+    justify-content: start;
+  }
+
+  .question {
+    font-size: 16px;
+  }
+
+  #blog {
+    padding: 60px 60px;
+  }
+
+  .blog-header,
+  .testimonial-header {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  .blog-list {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: start;
+  }
+
+  .blog-list .blog {
+    width: 100%;
+  }
+  .blog-list .img-1 {
+    width: 60%;
+  }
+
+  .blog-list-reverse {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: start;
+    text-align: start;
+  }
+
+  .blog-list-reverse .blog {
+    width: 100%;
+  }
+  .blog-list-reverse .img-1 {
+    width: 60%;
+  }
+
+  #projects {
+    padding: 20px;
+    text-align: start;
+  }
+
+  .project-header {
+    text-align: center;
+    padding: 30px;
+    font-size: 20px;
+    font-weight: 200;
+  }
+
+  .project-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .project-list .project {
+    width: 100%;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin-top: 80px;
+  }
+
+  .project .project-info {
+    margin-top: 20px;
+  }
+
+  .project-btn {
+    margin-top: 50px;
+  }
+
+  #testimonial {
+    padding: 20px;
+    text-align: start;
+  }
+
+  .testimonial-card {
+    margin-top: 30px;
+    padding: 50px 60px;
+  }
+
+  .testimonial-description {
+    width: 100%;
+    text-align: start;
+    background-color: white;
+    display: flex;
+    justify-content: start;
+  }
+
+  .testimonial-name {
+    font-size: 20px;
+    margin-top: 15px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  #contact {
+    margin-top: -200px;
+    padding: 250px 0px 60px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  form {
+    width: 80%;
+  }
+
+  input,
+  textarea {
+    padding: 5px;
+    width: 80%;
+    font-size: 16px;
+  }
+}
